@@ -5,7 +5,7 @@ package com.example.hellolib;
  */
 
 public class TextBox {
-    Integer i;
+    Integer i = 0;//must give a default value
     int j;
 
     public static void main (String[] args) {
@@ -15,7 +15,9 @@ public class TextBox {
 
     public void go() {
         j=i;
+        String s="2";
         System.out.println(j);
         System.out.println(i);
+        System.out.println(Integer.parseInt(s));// parse string to int
     }
 }
